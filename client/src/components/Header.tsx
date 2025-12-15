@@ -12,6 +12,7 @@ export default function Header() {
     { href: "/services", label: "Services" },
     { href: "/team", label: "Meet the Team" },
     { href: "/contact", label: "Contact" },
+    { href: "/videos", label: "Videos" },
   ];
 
   return (
