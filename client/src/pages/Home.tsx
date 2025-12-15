@@ -2,9 +2,47 @@ import { Link } from "wouter";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Users, Target, Briefcase } from "lucide-react";
+import { ArrowRight, Users, Target, Briefcase, Quote } from "lucide-react";
+import { useState, useEffect } from "react";
+
+const testimonials = [
+  {
+    quote: "PVT Partners transformed our approach to strategic planning. Their hands-on guidance helped us achieve results we didn't think were possible.",
+    author: "Sarah Mitchell",
+    company: "Mitchell Financial Advisors"
+  },
+  {
+    quote: "Working with Graeme, Paolo, and Rob has been a game-changer for our practice. They don't just advise – they roll up their sleeves and work alongside you.",
+    author: "James Henderson",
+    company: "Henderson Wealth Management"
+  },
+  {
+    quote: "The advisor development programme exceeded all expectations. Our team's confidence and client relationships have improved dramatically.",
+    author: "Emma Thompson",
+    company: "Thompson & Associates"
+  },
+  {
+    quote: "Their strategic planning process uncovered opportunities we'd completely overlooked. The ROI on our engagement was exceptional.",
+    author: "David Clarke",
+    company: "Clarke Advisory Group"
+  },
+  {
+    quote: "PVT Partners brought clarity to our business strategy. Their authentic approach and genuine commitment to our success made all the difference.",
+    author: "Rachel Williams",
+    company: "Williams Financial Planning"
+  }
+];
 
 export default function Home() {
+  const [currentTestimonial, setCurrentTestimonial] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentTestimonial((prev) => (prev + 1) % testimonials.length);
+    }, 5000);
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <div className="min-h-screen flex flex-col">
       <Header />
@@ -135,6 +173,53 @@ export default function Home() {
                 Get in Touch
               </Button>
             </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Testimonials Cycling Banner */}
+      <section className="py-12 bg-gray-100 overflow-hidden">
+        <div className="container">
+          <div className="text-center mb-8">
+            <h3 className="font-serif text-2xl text-slate-blue">What Our Clients Say</h3>
+          </div>
+          
+          <div className="relative max-w-4xl mx-auto">
+            <div className="flex items-center justify-center">
+              <Quote className="w-10 h-10 text-gold/30 absolute left-0 top-0" />
+              
+              <div className="text-center px-12 min-h-[180px] flex flex-col justify-center">
+                <p className="text-gray-700 text-xl italic leading-relaxed mb-6 transition-opacity duration-500">
+                  "{testimonials[currentTestimonial].quote}"
+                </p>
+                <div>
+                  <p className="font-semibold text-slate-blue">
+                    {testimonials[currentTestimonial].author}
+                  </p>
+                  <p className="text-gold text-sm">
+                    {testimonials[currentTestimonial].company}
+                  </p>
+                </div>
+              </div>
+              
+              <Quote className="w-10 h-10 text-gold/30 absolute right-0 bottom-0 rotate-180" />
+            </div>
+            
+            {/* Dots indicator */}
+            <div className="flex justify-center gap-2 mt-6">
+              {testimonials.map((_, index) => (
+                <button
+                  key={index}
+                  onClick={() => setCurrentTestimonial(index)}
+                  className={`w-2 h-2 rounded-full transition-all duration-300 ${
+                    index === currentTestimonial 
+                      ? "bg-gold w-6" 
+                      : "bg-gray-300 hover:bg-gray-400"
+                  }`}
+                  aria-label={`Go to testimonial ${index + 1}`}
+                />
+              ))}
+            </div>
           </div>
         </div>
       </section>
