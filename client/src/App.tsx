@@ -10,6 +10,7 @@ import Services from "./pages/Services";
 import Team from "./pages/Team";
 import Contact from "./pages/Contact";
 import Video from "./pages/Video";
+import CaseStudies from "./pages/CaseStudies";
 
 function Router() {
   return (
@@ -20,6 +21,7 @@ function Router() {
       <Route path={"/team"} component={Team} />
       <Route path={"/contact"} component={Contact} />
       <Route path={"/videos"} component={Video} />
+      <Route path={"/case-studies"} component={CaseStudies} />
       <Route path={"/404"} component={NotFound} />
       <Route component={NotFound} />
     </Switch>
