@@ -2,7 +2,7 @@ import { Link } from "wouter";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
-import { Users, Target, Briefcase, CheckCircle } from "lucide-react";
+import { Users, Target, Briefcase, CheckCircle, ArrowRight } from "lucide-react";
 
 export default function Services() {
   return (
@@ -34,7 +34,7 @@ export default function Services() {
               <p className="text-gray-600 text-lg leading-relaxed mb-6">
                 Comprehensive training and mentorship programs designed to elevate advisor capabilities and enhance client relationships. We work alongside you to build stronger practices through expert guidance and proven frameworks.
               </p>
-              <ul className="space-y-3">
+              <ul className="space-y-3 mb-8">
                 {["One-to-one mentorship and coaching", "Practice management training", "Client relationship enhancement", "Business development strategies"].map((item) => (
                   <li key={item} className="flex items-start gap-3">
                     <CheckCircle className="w-5 h-5 text-gold mt-0.5 flex-shrink-0" />
@@ -42,6 +42,11 @@ export default function Services() {
                   </li>
                 ))}
               </ul>
+              <Link href="/services/advisor-development">
+                <Button variant="link" className="text-gold hover:text-gold/80 text-lg font-semibold p-0">
+                  Learn More <ArrowRight className="ml-2 h-5 w-5" />
+                </Button>
+              </Link>
             </div>
             <div>
               <img 
@@ -74,7 +79,7 @@ export default function Services() {
               <p className="text-gray-600 text-lg leading-relaxed mb-6">
                 Bespoke strategic planning sessions that align your business objectives with actionable roadmaps for success. Our discovery process uncovers opportunities and creates clear paths to achieving your goals.
               </p>
-              <ul className="space-y-3">
+              <ul className="space-y-3 mb-8">
                 {["Discovery sessions and corporate fact-find", "SWOT analysis and diagnostic work", "Strategic plan with clear milestones", "Implementation support and guidance"].map((item) => (
                   <li key={item} className="flex items-start gap-3">
                     <CheckCircle className="w-5 h-5 text-gold mt-0.5 flex-shrink-0" />
@@ -82,6 +87,11 @@ export default function Services() {
                   </li>
                 ))}
               </ul>
+              <Link href="/services/strategic-planning">
+                <Button variant="link" className="text-gold hover:text-gold/80 text-lg font-semibold p-0">
+                  Learn More <ArrowRight className="ml-2 h-5 w-5" />
+                </Button>
+              </Link>
             </div>
           </div>
         </div>
@@ -100,7 +110,7 @@ export default function Services() {
               <p className="text-gray-600 text-lg leading-relaxed mb-6">
                 Expert guidance on business development, operational efficiency, and growth strategies tailored to your unique needs. We embed with your team to drive real, measurable change.
               </p>
-              <ul className="space-y-3">
+              <ul className="space-y-3 mb-8">
                 {["Operational efficiency and process improvement", "Business development and growth strategies", "Change management and transformation", "Leadership and team development"].map((item) => (
                   <li key={item} className="flex items-start gap-3">
                     <CheckCircle className="w-5 h-5 text-gold mt-0.5 flex-shrink-0" />
@@ -108,6 +118,11 @@ export default function Services() {
                   </li>
                 ))}
               </ul>
+              <Link href="/services/business-consulting">
+                <Button variant="link" className="text-gold hover:text-gold/80 text-lg font-semibold p-0">
+                  Learn More <ArrowRight className="ml-2 h-5 w-5" />
+                </Button>
+              </Link>
             </div>
             <div>
               <img 
