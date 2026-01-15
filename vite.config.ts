@@ -31,7 +31,7 @@ export default defineConfig({
         team: path.resolve(import.meta.dirname, "client/team.html"),
         contact: path.resolve(import.meta.dirname, "client/contact.html"),
         caseStudies: path.resolve(import.meta.dirname, "client/case-studies.html"),
-        videos: path.resolve(import.meta.dirname, "client/videos.html"),
+
         advisorDevelopment: path.resolve(import.meta.dirname, "client/advisor-development.html"),
         strategicPlanning: path.resolve(import.meta.dirname, "client/strategic-planning.html"),
         businessConsulting: path.resolve(import.meta.dirname, "client/business-consulting.html"),

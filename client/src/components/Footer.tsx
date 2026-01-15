@@ -28,12 +28,12 @@ export default function Footer() {
             <a href="/team.html" className="text-white/80 hover:text-white transition-colors">Team</a>
             <a href="/contact.html" className="text-white/80 hover:text-white transition-colors">Contact</a>
             <a href="/case-studies.html" className="text-white/80 hover:text-white transition-colors">Case Studies</a>
-            <a href="/videos.html" className="text-white/80 hover:text-white transition-colors">Videos</a>
+
           </nav>
           
           {/* Copyright */}
           <p className="text-white/60 text-sm">
-            © 2025 PVT Partners Ltd. All rights reserved.
+            © 2026 PVT Partners Ltd. All rights reserved.
           </p>
         </div>
       </div>
