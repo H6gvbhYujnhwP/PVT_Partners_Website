@@ -1,19 +1,22 @@
-import { Link, useLocation } from "wouter";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 
 export default function Header() {
-  const [location] = useLocation();
+  const [location, setLocation] = useState("");
+  
+  useEffect(() => {
+    setLocation(window.location.pathname);
+  }, []);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const navLinks = [
-    { href: "/", label: "Home" },
-    { href: "/about", label: "About PVT" },
-    { href: "/services", label: "Services" },
-    { href: "/team", label: "Meet the Team" },
-    { href: "/contact", label: "Contact" },
-    { href: "/case-studies", label: "Case Studies" },
-    { href: "/videos", label: "Videos" },
+    { href: "/index.html", label: "Home" },
+    { href: "/about.html", label: "About PVT" },
+    { href: "/services.html", label: "Services" },
+    { href: "/team.html", label: "Meet the Team" },
+    { href: "/contact.html", label: "Contact" },
+    { href: "/case-studies.html", label: "Case Studies" },
+    { href: "/videos.html", label: "Videos" },
   ];
 
   return (
@@ -21,16 +24,16 @@ export default function Header() {
       <div className="container">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-3">
+          <a href="/index.html" className="flex items-center gap-3">
             <div className="w-12 h-12 rounded-full border-2 border-white flex items-center justify-center">
               <span className="text-white font-serif text-lg font-semibold">PVT</span>
             </div>
-          </Link>
+          </a>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center gap-8">
             {navLinks.map((link) => (
-              <Link
+              <a
                 key={link.href}
                 href={link.href}
                 className={`text-white/90 hover:text-white transition-colors text-sm font-medium ${
@@ -38,7 +41,7 @@ export default function Header() {
                 }`}
               >
                 {link.label}
-              </Link>
+              </a>
             ))}
           </nav>
 
@@ -55,7 +58,7 @@ export default function Header() {
         {mobileMenuOpen && (
           <nav className="md:hidden pb-4">
             {navLinks.map((link) => (
-              <Link
+              <a
                 key={link.href}
                 href={link.href}
                 className={`block py-2 text-white/90 hover:text-white transition-colors ${
@@ -64,7 +67,7 @@ export default function Header() {
                 onClick={() => setMobileMenuOpen(false)}
               >
                 {link.label}
-              </Link>
+              </a>
             ))}
           </nav>
         )}

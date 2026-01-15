@@ -1,7 +1,8 @@
-import { Link } from "wouter";
+
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
+import mentorshipImage from "@/assets/images/mentorship.jpg";
 import { Users, CheckCircle, Target, Award, TrendingUp, BookOpen, MessageSquare, ArrowRight } from "lucide-react";
 
 const benefits = [
@@ -63,7 +64,7 @@ export default function AdvisorDevelopment() {
       <section className="relative min-h-[500px] flex items-center">
         <div 
           className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: "url('/mentorship.jpg')" }}
+          style={{ backgroundImage: `url(${mentorshipImage})` }}
         >
           <div className="absolute inset-0 bg-slate-blue/80"></div>
         </div>
@@ -77,11 +78,11 @@ export default function AdvisorDevelopment() {
             <p className="text-white/90 text-xl leading-relaxed mb-8">
               Comprehensive training and mentorship programmes designed to elevate advisor capabilities, enhance client relationships, and drive sustainable business growth.
             </p>
-            <Link href="/contact">
+            <a href="/contact.html">
               <Button className="bg-gold hover:bg-gold/90 text-slate-blue font-semibold px-8 py-6 text-lg">
                 Discuss Your Needs
               </Button>
-            </Link>
+            </a>
           </div>
         </div>
       </section>
@@ -212,16 +213,16 @@ export default function AdvisorDevelopment() {
               Let's discuss how our Advisor Development programme can help elevate your team's capabilities and drive better outcomes for your clients.
             </p>
             <div className="flex flex-wrap justify-center gap-4">
-              <Link href="/contact">
+              <a href="/contact.html">
                 <Button className="bg-gold hover:bg-gold/90 text-slate-blue font-semibold px-8 py-6 text-lg">
                   Get in Touch
                 </Button>
-              </Link>
-              <Link href="/case-studies">
+              </a>
+              <a href="/case-studies.html">
                 <Button variant="outline" className="border-white text-white hover:bg-white/10 px-8 py-6 text-lg">
                   View Case Studies
                 </Button>
-              </Link>
+              </a>
             </div>
           </div>
         </div>

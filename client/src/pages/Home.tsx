@@ -1,9 +1,10 @@
-import { Link } from "wouter";
+
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Users, Target, Briefcase, Quote } from "lucide-react";
 import { useState, useEffect } from "react";
+import heroTeamImage from "@/assets/images/hero-team.jpg";
 
 const testimonials = [
   {
@@ -51,7 +52,7 @@ export default function Home() {
       <section className="relative min-h-[600px] lg:min-h-[700px] flex items-center">
         <div 
           className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: "url('/hero-team.jpg')" }}
+          style={{ backgroundImage: `url(${heroTeamImage})` }}
         >
           <div className="absolute inset-0 bg-black/40"></div>
         </div>
@@ -67,16 +68,16 @@ export default function Home() {
               Empowering advisors and businesses through expert strategic planning and development. We transform vision into measurable results.
             </p>
             <div className="flex flex-wrap gap-4">
-              <Link href="/contact">
+              <a href="/contact.html">
                 <Button className="bg-gold hover:bg-gold/90 text-slate-blue font-semibold px-8 py-6 text-lg">
                   Get Started
                 </Button>
-              </Link>
-              <Link href="/services">
+              </a>
+              <a href="/services.html">
                 <Button variant="outline" className="border-white text-white hover:bg-white/10 px-8 py-6 text-lg">
                   Our Services
                 </Button>
-              </Link>
+              </a>
             </div>
           </div>
         </div>
@@ -93,11 +94,11 @@ export default function Home() {
             <p className="text-gray-600 text-lg leading-relaxed mb-8">
               We believe in creating lasting partnerships that drive sustainable growth and success. We don't just advise from the sidelines – we roll up our sleeves and work alongside you.
             </p>
-            <Link href="/about">
+            <a href="/about.html">
               <Button variant="link" className="text-gold hover:text-gold/80 text-lg font-semibold">
                 Learn More About Us <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
-            </Link>
+            </a>
           </div>
         </div>
       </section>
@@ -148,11 +149,11 @@ export default function Home() {
           </div>
 
           <div className="text-center mt-12">
-            <Link href="/services">
+            <a href="/services.html">
               <Button className="bg-white text-slate-blue hover:bg-white/90 font-semibold px-8 py-6 text-lg">
                 View All Services
               </Button>
-            </Link>
+            </a>
           </div>
         </div>
       </section>
@@ -168,11 +169,11 @@ export default function Home() {
             <p className="text-white/80 text-lg mb-8">
               Whether you're looking to develop your advisory team, create a strategic plan, or transform your business operations, we'd love to hear from you.
             </p>
-            <Link href="/contact">
+            <a href="/contact.html">
               <Button className="bg-gold hover:bg-gold/90 text-slate-blue font-semibold px-10 py-6 text-lg">
                 Get in Touch
               </Button>
-            </Link>
+            </a>
           </div>
         </div>
       </section>

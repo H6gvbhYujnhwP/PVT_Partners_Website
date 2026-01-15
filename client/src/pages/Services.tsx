@@ -1,8 +1,11 @@
-import { Link } from "wouter";
+
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Users, Target, Briefcase, CheckCircle, ArrowRight } from "lucide-react";
+import mentorshipImage from "@/assets/images/mentorship.jpg";
+import strategicPlanningImage from "@/assets/images/strategic-planning.jpg";
+import consultingImage from "@/assets/images/consulting.jpg";
 
 export default function Services() {
   return (
@@ -42,15 +45,15 @@ export default function Services() {
                   </li>
                 ))}
               </ul>
-              <Link href="/services/advisor-development">
+              <a href="/advisor-development.html">
                 <Button variant="link" className="text-gold hover:text-gold/80 text-lg font-semibold p-0">
                   Learn More <ArrowRight className="ml-2 h-5 w-5" />
                 </Button>
-              </Link>
+              </a>
             </div>
             <div>
               <img 
-                src="/mentorship.jpg" 
+                src={mentorshipImage} 
                 alt="Advisor Development" 
                 className="rounded-lg shadow-lg w-full h-[400px] object-cover"
               />
@@ -65,7 +68,7 @@ export default function Services() {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="order-2 lg:order-1">
               <img 
-                src="/strategic-planning.jpg" 
+                src={strategicPlanningImage} 
                 alt="Strategic Planning" 
                 className="rounded-lg shadow-lg w-full h-[400px] object-cover"
               />
@@ -87,11 +90,11 @@ export default function Services() {
                   </li>
                 ))}
               </ul>
-              <Link href="/services/strategic-planning">
+              <a href="/strategic-planning.html">
                 <Button variant="link" className="text-gold hover:text-gold/80 text-lg font-semibold p-0">
                   Learn More <ArrowRight className="ml-2 h-5 w-5" />
                 </Button>
-              </Link>
+              </a>
             </div>
           </div>
         </div>
@@ -118,15 +121,15 @@ export default function Services() {
                   </li>
                 ))}
               </ul>
-              <Link href="/services/business-consulting">
+              <a href="/business-consulting.html">
                 <Button variant="link" className="text-gold hover:text-gold/80 text-lg font-semibold p-0">
                   Learn More <ArrowRight className="ml-2 h-5 w-5" />
                 </Button>
-              </Link>
+              </a>
             </div>
             <div>
               <img 
-                src="/consulting.jpg" 
+                src={consultingImage} 
                 alt="Business Consulting" 
                 className="rounded-lg shadow-lg w-full h-[400px] object-cover"
               />
@@ -143,11 +146,11 @@ export default function Services() {
             <p className="text-white/80 text-lg mb-8">
               Let's discuss which services are right for your business and create a tailored plan for success.
             </p>
-            <Link href="/contact">
+            <a href="/contact.html">
               <Button className="bg-gold hover:bg-gold/90 text-slate-blue font-semibold px-10 py-6 text-lg">
                 Contact Us Today
               </Button>
-            </Link>
+            </a>
           </div>
         </div>
       </section>

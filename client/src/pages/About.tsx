@@ -1,7 +1,8 @@
-import { Link } from "wouter";
+
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
+import aboutOfficeImage from "@/assets/images/about-office.jpg";
 import { Handshake, Heart, Zap, Award } from "lucide-react";
 
 export default function About() {
@@ -37,7 +38,7 @@ export default function About() {
             </div>
             <div className="relative">
               <img 
-                src="/about-office.jpg" 
+                src={aboutOfficeImage} 
                 alt="PVT Partners Office" 
                 className="rounded-lg shadow-lg w-full h-[400px] object-cover"
               />
@@ -106,11 +107,11 @@ export default function About() {
             <p className="text-white/90 text-lg mb-8">
               Let's discuss how we can help your business achieve its full potential.
             </p>
-            <Link href="/contact">
+            <a href="/contact.html">
               <Button className="bg-white text-slate-blue hover:bg-white/90 font-semibold px-10 py-6 text-lg">
                 Get in Touch
               </Button>
-            </Link>
+            </a>
           </div>
         </div>
       </section>

@@ -1,7 +1,8 @@
-import { Link } from "wouter";
+
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
+import heroTeamImage from "@/assets/images/hero-team.jpg";
 
 const directors = [
   {
@@ -63,7 +64,7 @@ export default function Team() {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <img 
-                src="/hero-team.jpg" 
+                src={heroTeamImage} 
                 alt="PVT Partners Team" 
                 className="rounded-lg shadow-lg w-full h-[400px] object-cover"
               />
@@ -89,11 +90,11 @@ export default function Team() {
             <p className="text-white/80 text-lg mb-8">
               We'd love to learn more about your business and discuss how we can help you achieve your goals.
             </p>
-            <Link href="/contact">
+            <a href="/contact.html">
               <Button className="bg-gold hover:bg-gold/90 text-slate-blue font-semibold px-10 py-6 text-lg">
                 Get in Touch
               </Button>
-            </Link>
+            </a>
           </div>
         </div>
       </section>

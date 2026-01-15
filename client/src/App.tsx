@@ -18,6 +18,7 @@ import BusinessConsulting from "./pages/BusinessConsulting";
 function Router() {
   return (
     <Switch>
+      <Route path="/design1" component={Home} />
       <Route path={"/"} component={Home} />
       <Route path={"/about"} component={About} />
       <Route path={"/services"} component={Services} />

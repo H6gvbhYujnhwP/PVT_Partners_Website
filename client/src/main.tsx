@@ -1,5 +1,10 @@
 import { createRoot } from "react-dom/client";
-import App from "./App";
-import "./index.css";
+import PageLayout from "@/components/PageLayout";
+import Home from "@/pages/Home";
+import "@/index.css";
 
-createRoot(document.getElementById("root")!).render(<App />);
+createRoot(document.getElementById("root")!).render(
+  <PageLayout>
+    <Home />
+  </PageLayout>
+);

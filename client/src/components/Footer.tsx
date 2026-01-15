@@ -1,4 +1,4 @@
-import { Link } from "wouter";
+
 
 export default function Footer() {
   return (
@@ -22,13 +22,13 @@ export default function Footer() {
           
           {/* Navigation */}
           <nav className="flex flex-wrap justify-center gap-6 mb-8 text-sm">
-            <Link href="/" className="text-white/80 hover:text-white transition-colors">Home</Link>
-            <Link href="/about" className="text-white/80 hover:text-white transition-colors">About</Link>
-            <Link href="/services" className="text-white/80 hover:text-white transition-colors">Services</Link>
-            <Link href="/team" className="text-white/80 hover:text-white transition-colors">Team</Link>
-            <Link href="/contact" className="text-white/80 hover:text-white transition-colors">Contact</Link>
-            <Link href="/case-studies" className="text-white/80 hover:text-white transition-colors">Case Studies</Link>
-            <Link href="/videos" className="text-white/80 hover:text-white transition-colors">Videos</Link>
+            <a href="/index.html" className="text-white/80 hover:text-white transition-colors">Home</a>
+            <a href="/about.html" className="text-white/80 hover:text-white transition-colors">About</a>
+            <a href="/services.html" className="text-white/80 hover:text-white transition-colors">Services</a>
+            <a href="/team.html" className="text-white/80 hover:text-white transition-colors">Team</a>
+            <a href="/contact.html" className="text-white/80 hover:text-white transition-colors">Contact</a>
+            <a href="/case-studies.html" className="text-white/80 hover:text-white transition-colors">Case Studies</a>
+            <a href="/videos.html" className="text-white/80 hover:text-white transition-colors">Videos</a>
           </nav>
           
           {/* Copyright */}

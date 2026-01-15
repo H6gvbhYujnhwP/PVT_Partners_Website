@@ -1,7 +1,10 @@
-import { Link } from "wouter";
+
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
+import mentorshipImage from "@/assets/images/mentorship.jpg";
+import strategicPlanningImage from "@/assets/images/strategic-planning.jpg";
+import consultingImage from "@/assets/images/consulting.jpg";
 import { TrendingUp, Users, Target, Award, ArrowRight, Quote } from "lucide-react";
 
 const caseStudies = [
@@ -18,7 +21,7 @@ const caseStudies = [
     ],
     testimonial: "PVT Partners transformed our approach to team development. The results speak for themselves.",
     author: "Sarah Mitchell, Managing Director",
-    image: "/mentorship.jpg",
+    image: mentorshipImage,
     service: "Advisor Development"
   },
   {
@@ -34,7 +37,7 @@ const caseStudies = [
     ],
     testimonial: "The strategic planning process uncovered opportunities we'd completely overlooked. Exceptional ROI.",
     author: "James Henderson, CEO",
-    image: "/strategic-planning.jpg",
+    image: strategicPlanningImage,
     service: "Strategic Planning"
   },
   {
@@ -50,7 +53,7 @@ const caseStudies = [
     ],
     testimonial: "They don't just advise – they roll up their sleeves and work alongside you. Game-changing.",
     author: "David Clarke, Founder",
-    image: "/consulting.jpg",
+    image: consultingImage,
     service: "Business Consulting"
   }
 ];
@@ -159,11 +162,11 @@ export default function CaseStudies() {
             <p className="text-white/90 text-lg mb-8">
               Let's discuss how we can help your business achieve similar transformational results.
             </p>
-            <Link href="/contact">
+            <a href="/contact.html">
               <Button className="bg-white text-slate-blue hover:bg-white/90 font-semibold px-10 py-6 text-lg">
                 Start Your Journey <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
-            </Link>
+            </a>
           </div>
         </div>
       </section>

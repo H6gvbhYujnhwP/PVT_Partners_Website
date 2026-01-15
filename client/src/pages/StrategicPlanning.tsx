@@ -1,7 +1,9 @@
-import { Link } from "wouter";
+
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
+import strategicPlanningImage from "@/assets/images/strategic-planning.jpg";
+import aboutOfficeImage from "@/assets/images/about-office.jpg";
 import { Target, CheckCircle, Compass, Map, BarChart3, Lightbulb, Clock, ArrowRight } from "lucide-react";
 
 const outcomes = [
@@ -74,7 +76,7 @@ export default function StrategicPlanning() {
       <section className="relative min-h-[500px] flex items-center">
         <div 
           className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: "url('/strategic-planning.jpg')" }}
+          style={{ backgroundImage: `url(${strategicPlanningImage})` }}
         >
           <div className="absolute inset-0 bg-slate-blue/80"></div>
         </div>
@@ -88,11 +90,11 @@ export default function StrategicPlanning() {
             <p className="text-white/90 text-xl leading-relaxed mb-8">
               Bespoke strategic planning that aligns your business objectives with actionable roadmaps, turning vision into measurable results.
             </p>
-            <Link href="/contact">
+            <a href="/contact.html">
               <Button className="bg-gold hover:bg-gold/90 text-slate-blue font-semibold px-8 py-6 text-lg">
                 Start Planning
               </Button>
-            </Link>
+            </a>
           </div>
         </div>
       </section>
@@ -218,7 +220,7 @@ export default function StrategicPlanning() {
             </div>
             <div>
               <img 
-                src="/about-office.jpg" 
+                src={aboutOfficeImage} 
                 alt="Strategic Planning Session" 
                 className="rounded-lg shadow-lg w-full h-[400px] object-cover"
               />
@@ -236,16 +238,16 @@ export default function StrategicPlanning() {
               Let's discuss how our strategic planning process can help you achieve clarity, alignment, and results.
             </p>
             <div className="flex flex-wrap justify-center gap-4">
-              <Link href="/contact">
+              <a href="/contact.html">
                 <Button className="bg-gold hover:bg-gold/90 text-slate-blue font-semibold px-8 py-6 text-lg">
                   Get in Touch
                 </Button>
-              </Link>
-              <Link href="/case-studies">
+              </a>
+              <a href="/case-studies.html">
                 <Button variant="outline" className="border-white text-white hover:bg-white/10 px-8 py-6 text-lg">
                   View Case Studies
                 </Button>
-              </Link>
+              </a>
             </div>
           </div>
         </div>

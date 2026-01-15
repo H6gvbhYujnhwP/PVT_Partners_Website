@@ -1,15 +1,20 @@
-import { Link } from "wouter";
+
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Play, Video as VideoIcon } from "lucide-react";
+import heroTeamImage from "@/assets/images/hero-team.jpg";
+import strategicPlanningImage from "@/assets/images/strategic-planning.jpg";
+import mentorshipImage from "@/assets/images/mentorship.jpg";
+import consultingImage from "@/assets/images/consulting.jpg";
+import aboutOfficeImage from "@/assets/images/about-office.jpg";
 
 const videos = [
   {
     id: 1,
     title: "Welcome to PVT Partners",
     description: "An introduction to who we are and how we help businesses transform strategy into action.",
-    thumbnail: "/hero-team.jpg",
+    thumbnail: heroTeamImage,
     duration: "3:45",
     category: "About Us"
   },
@@ -17,7 +22,7 @@ const videos = [
     id: 2,
     title: "Our Approach to Strategic Planning",
     description: "Learn about our discovery process and how we create actionable roadmaps for success.",
-    thumbnail: "/strategic-planning.jpg",
+    thumbnail: strategicPlanningImage,
     duration: "5:20",
     category: "Services"
   },
@@ -25,7 +30,7 @@ const videos = [
     id: 3,
     title: "Advisor Development Programme",
     description: "Discover how our mentorship and training programmes elevate advisor capabilities.",
-    thumbnail: "/mentorship.jpg",
+    thumbnail: mentorshipImage,
     duration: "4:15",
     category: "Services"
   },
@@ -33,7 +38,7 @@ const videos = [
     id: 4,
     title: "Client Success Story: Mitchell Financial",
     description: "Hear how we helped Mitchell Financial Advisors transform their practice.",
-    thumbnail: "/consulting.jpg",
+    thumbnail: consultingImage,
     duration: "6:30",
     category: "Testimonials"
   },
@@ -41,7 +46,7 @@ const videos = [
     id: 5,
     title: "Meet the Directors",
     description: "Get to know Graeme, Paolo, and Rob - the team behind PVT Partners.",
-    thumbnail: "/about-office.jpg",
+    thumbnail: aboutOfficeImage,
     duration: "4:50",
     category: "About Us"
   },
@@ -49,7 +54,7 @@ const videos = [
     id: 6,
     title: "Business Consulting in Action",
     description: "See how we embed with teams to drive real, measurable change.",
-    thumbnail: "/consulting.jpg",
+    thumbnail: consultingImage,
     duration: "5:10",
     category: "Services"
   }
@@ -78,7 +83,7 @@ export default function Video() {
           <div className="max-w-4xl mx-auto">
             <div className="relative rounded-lg overflow-hidden shadow-xl">
               <img 
-                src="/hero-team.jpg" 
+                src={heroTeamImage} 
                 alt="Featured Video" 
                 className="w-full h-[400px] object-cover"
               />
@@ -146,11 +151,11 @@ export default function Video() {
             <p className="text-white/90 text-lg mb-8">
               Get in touch to arrange a personal consultation and learn how we can help your business.
             </p>
-            <Link href="/contact">
+            <a href="/contact.html">
               <Button className="bg-white text-slate-blue hover:bg-white/90 font-semibold px-10 py-6 text-lg">
                 Contact Us
               </Button>
-            </Link>
+            </a>
           </div>
         </div>
       </section>

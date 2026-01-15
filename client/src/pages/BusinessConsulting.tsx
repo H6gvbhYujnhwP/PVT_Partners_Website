@@ -1,7 +1,10 @@
-import { Link } from "wouter";
+
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
+import consultingImage from "@/assets/images/consulting.jpg";
+import heroTeamImage from "@/assets/images/hero-team.jpg";
+import aboutOfficeImage from "@/assets/images/about-office.jpg";
 import { Briefcase, CheckCircle, Settings, TrendingUp, Users, Zap, Shield, ArrowRight } from "lucide-react";
 
 const consultingAreas = [
@@ -92,7 +95,7 @@ export default function BusinessConsulting() {
       <section className="relative min-h-[500px] flex items-center">
         <div 
           className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: "url('/consulting.jpg')" }}
+          style={{ backgroundImage: `url(${consultingImage})` }}
         >
           <div className="absolute inset-0 bg-slate-blue/80"></div>
         </div>
@@ -106,11 +109,11 @@ export default function BusinessConsulting() {
             <p className="text-white/90 text-xl leading-relaxed mb-8">
               Expert guidance on business development, operational efficiency, and growth strategies – delivered through hands-on partnership, not just advice.
             </p>
-            <Link href="/contact">
+            <a href="/contact.html">
               <Button className="bg-gold hover:bg-gold/90 text-slate-blue font-semibold px-8 py-6 text-lg">
                 Let's Talk
               </Button>
-            </Link>
+            </a>
           </div>
         </div>
       </section>
@@ -174,7 +177,7 @@ export default function BusinessConsulting() {
             </div>
             <div>
               <img 
-                src="/hero-team.jpg" 
+                src={heroTeamImage} 
                 alt="Business Consulting Team" 
                 className="rounded-lg shadow-lg w-full h-[500px] object-cover"
               />
@@ -217,7 +220,7 @@ export default function BusinessConsulting() {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="order-2 lg:order-1">
               <img 
-                src="/about-office.jpg" 
+                src={aboutOfficeImage} 
                 alt="Business Results" 
                 className="rounded-lg shadow-lg w-full h-[400px] object-cover"
               />
@@ -263,16 +266,16 @@ export default function BusinessConsulting() {
               Let's discuss how our consulting expertise can help you overcome challenges and capture opportunities.
             </p>
             <div className="flex flex-wrap justify-center gap-4">
-              <Link href="/contact">
+              <a href="/contact.html">
                 <Button className="bg-gold hover:bg-gold/90 text-slate-blue font-semibold px-8 py-6 text-lg">
                   Get in Touch
                 </Button>
-              </Link>
-              <Link href="/case-studies">
+              </a>
+              <a href="/case-studies.html">
                 <Button variant="outline" className="border-white text-white hover:bg-white/10 px-8 py-6 text-lg">
                   View Case Studies
                 </Button>
-              </Link>
+              </a>
             </div>
           </div>
         </div>
