@@ -59,7 +59,7 @@ export default function Home() {
         <div className="container relative z-10 py-20">
           <div className="max-w-2xl">
             <h1 className="font-serif text-5xl md:text-6xl lg:text-7xl text-white mb-4">
-              PARTNERS LTD.
+              PVT PARTNERS LTD.
             </h1>
             <p className="font-serif text-gold text-2xl md:text-3xl italic mb-6">
               Strategy Into Action
