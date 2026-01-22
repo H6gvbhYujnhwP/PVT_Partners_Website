@@ -163,11 +163,11 @@ export default function Services() {
         <div className="container">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
-              <div className="w-16 h-16 bg-gold/20 rounded-full flex items-center justify-center mb-6">
-                <Search className="w-8 h-8 text-gold" />
+              <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mb-6">
+                <Search className="w-8 h-8 text-white" />
               </div>
               <h2 className="font-serif text-4xl mb-2">Discover Session</h2>
-              <p className="text-gold italic font-serif text-lg mb-6 font-medium">£1000 per day</p>
+              <p className="text-white italic font-serif text-lg mb-6 font-medium">£1000 per day</p>
               <p className="text-white/90 text-lg leading-relaxed mb-6">
                 Two of our directors spend 1–2 days in your business to conduct a deep dive into your operations, strategy, and team dynamics.
               </p>
@@ -178,13 +178,13 @@ export default function Services() {
                   "Hold adviser meetings to understand personal journeys and priorities"
                 ].map((item) => (
                   <li key={item} className="flex items-start gap-3">
-                    <CheckCircle className="w-5 h-5 text-gold mt-0.5 flex-shrink-0" />
+                    <CheckCircle className="w-5 h-5 text-white mt-0.5 flex-shrink-0" />
                     <span className="text-white/90">{item}</span>
                   </li>
                 ))}
               </ul>
               <div className="bg-white/10 p-6 rounded-lg border border-white/20">
-                <h4 className="font-serif text-xl text-gold mb-2 font-medium">The Outcome</h4>
+                <h4 className="font-serif text-xl text-white mb-2 font-medium">The Outcome</h4>
                 <p className="text-white/90">
                   A comprehensive report with insights, opportunities for growth, and tailored recommendations. We walk you through the findings and discuss ongoing support options.
                 </p>
