@@ -1,7 +1,7 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
-import { CheckCircle, ArrowRight, Search, Layout, Settings, Users } from "lucide-react";
+import { CheckCircle, ArrowRight, Search, Layout, Settings, Users, Target, Briefcase } from "lucide-react";
 import mentorshipImage from "@/assets/images/mentorship.jpg";
 import strategicPlanningImage from "@/assets/images/strategic-planning.jpg";
 import consultingImage from "@/assets/images/consulting.jpg";
@@ -44,6 +44,120 @@ export default function Services() {
         </div>
       </section>
 
+      {/* Advisor Development */}
+      <section className="py-20">
+        <div className="container">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <div className="w-16 h-16 bg-gold/10 rounded-full flex items-center justify-center mb-6">
+                <Users className="w-8 h-8 text-gold" />
+              </div>
+              <h2 className="font-serif text-4xl text-slate-blue mb-2">Advisor Development</h2>
+              <p className="text-gold italic font-serif text-lg mb-6">Elevating capabilities, enhancing relationships</p>
+              <p className="text-gray-600 text-lg leading-relaxed mb-6">
+                Comprehensive training and mentorship programs designed to elevate advisor capabilities and enhance client relationships. We work alongside you to build stronger practices through expert guidance and proven frameworks.
+              </p>
+              <ul className="space-y-3 mb-8">
+                {["One-to-one mentorship and coaching", "Practice management training", "Client relationship enhancement", "Business development strategies"].map((item) => (
+                  <li key={item} className="flex items-start gap-3">
+                    <CheckCircle className="w-5 h-5 text-gold mt-0.5 flex-shrink-0" />
+                    <span className="text-gray-600">{item}</span>
+                  </li>
+                ))}
+              </ul>
+              <a href="/advisor-development.html">
+                <Button variant="link" className="text-gold hover:text-gold/80 text-lg font-semibold p-0">
+                  Learn More <ArrowRight className="ml-2 h-5 w-5" />
+                </Button>
+              </a>
+            </div>
+            <div>
+              <img 
+                src={mentorshipImage} 
+                alt="Advisor Development" 
+                className="rounded-lg shadow-lg w-full h-[400px] object-cover"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Strategic Planning */}
+      <section className="py-20 bg-gray-50">
+        <div className="container">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div className="order-2 lg:order-1">
+              <img 
+                src={strategicPlanningImage} 
+                alt="Strategic Planning" 
+                className="rounded-lg shadow-lg w-full h-[400px] object-cover"
+              />
+            </div>
+            <div className="order-1 lg:order-2">
+              <div className="w-16 h-16 bg-gold/10 rounded-full flex items-center justify-center mb-6">
+                <Target className="w-8 h-8 text-gold" />
+              </div>
+              <h2 className="font-serif text-4xl text-slate-blue mb-2">Strategic Planning</h2>
+              <p className="text-gold italic font-serif text-lg mb-6">From discovery to implementation</p>
+              <p className="text-gray-600 text-lg leading-relaxed mb-6">
+                Bespoke strategic planning sessions that align your business objectives with actionable roadmaps for success. Our discovery process uncovers opportunities and creates clear paths to achieving your goals.
+              </p>
+              <ul className="space-y-3 mb-8">
+                {["Discovery sessions and corporate fact-find", "SWOT analysis and diagnostic work", "Strategic plan with clear milestones", "Implementation support and guidance"].map((item) => (
+                  <li key={item} className="flex items-start gap-3">
+                    <CheckCircle className="w-5 h-5 text-gold mt-0.5 flex-shrink-0" />
+                    <span className="text-gray-600">{item}</span>
+                  </li>
+                ))}
+              </ul>
+              <a href="/strategic-planning.html">
+                <Button variant="link" className="text-gold hover:text-gold/80 text-lg font-semibold p-0">
+                  Learn More <ArrowRight className="ml-2 h-5 w-5" />
+                </Button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Business Consulting */}
+      <section className="py-20">
+        <div className="container">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <div className="w-16 h-16 bg-gold/10 rounded-full flex items-center justify-center mb-6">
+                <Briefcase className="w-8 h-8 text-gold" />
+              </div>
+              <h2 className="font-serif text-4xl text-slate-blue mb-2">Business Consulting</h2>
+              <p className="text-gold italic font-serif text-lg mb-6">Hands-on expertise for real results</p>
+              <p className="text-gray-600 text-lg leading-relaxed mb-6">
+                Expert guidance on business development, operational efficiency, and growth strategies tailored to your unique needs. We embed with your team to drive real, measurable change.
+              </p>
+              <ul className="space-y-3 mb-8">
+                {["Operational efficiency and process improvement", "Business development and growth strategies", "Change management and transformation", "Leadership and team development"].map((item) => (
+                  <li key={item} className="flex items-start gap-3">
+                    <CheckCircle className="w-5 h-5 text-gold mt-0.5 flex-shrink-0" />
+                    <span className="text-gray-600">{item}</span>
+                  </li>
+                ))}
+              </ul>
+              <a href="/business-consulting.html">
+                <Button variant="link" className="text-gold hover:text-gold/80 text-lg font-semibold p-0">
+                  Learn More <ArrowRight className="ml-2 h-5 w-5" />
+                </Button>
+              </a>
+            </div>
+            <div>
+              <img 
+                src={consultingImage} 
+                alt="Business Consulting" 
+                className="rounded-lg shadow-lg w-full h-[400px] object-cover"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Our Process - Discover Session */}
       <section className="py-20 bg-mauve text-white">
         <div className="container">
@@ -53,7 +167,7 @@ export default function Services() {
                 <Search className="w-8 h-8 text-gold" />
               </div>
               <h2 className="font-serif text-4xl mb-2">Discover Session</h2>
-              <p className="text-gold italic font-serif text-lg mb-6">£1000 per day</p>
+              <p className="text-gold italic font-serif text-lg mb-6 font-medium">£1000 per day</p>
               <p className="text-white/90 text-lg leading-relaxed mb-6">
                 Two of our directors spend 1–2 days in your business to conduct a deep dive into your operations, strategy, and team dynamics.
               </p>
@@ -70,7 +184,7 @@ export default function Services() {
                 ))}
               </ul>
               <div className="bg-white/10 p-6 rounded-lg border border-white/20">
-                <h4 className="font-serif text-xl text-gold mb-2">The Outcome</h4>
+                <h4 className="font-serif text-xl text-gold mb-2 font-medium">The Outcome</h4>
                 <p className="text-white/90">
                   A comprehensive report with insights, opportunities for growth, and tailored recommendations. We walk you through the findings and discuss ongoing support options.
                 </p>
