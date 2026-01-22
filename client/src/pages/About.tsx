@@ -23,25 +23,72 @@ export default function About() {
       {/* Our Story Section */}
       <section className="py-20">
         <div className="container">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
+          <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
             <div>
-              <h2 className="font-serif text-4xl text-slate-blue mb-6">Our Journey</h2>
+              <h2 className="font-serif text-4xl text-slate-blue mb-6">Our Story</h2>
               <p className="text-gray-600 text-lg leading-relaxed mb-6">
-                PVT Partners was founded by three experienced professionals who share a passion for helping businesses succeed. With over 20 years of combined experience working with entrepreneurs, financial advisors, and growing businesses, we understand the challenges you face.
+                Payne, Vaughan & Theobald Partners is a Consultancy and Development business, exclusively for the Financial Planning & Wealth Management sector, boasting nearly 100 years of collective knowledge, skills and experience.
               </p>
               <p className="text-gray-600 text-lg leading-relaxed mb-6">
-                We've walked the path ourselves – we know that starting and growing a business isn't easy. That's why we don't just offer advice from the sidelines. We roll up our sleeves and work alongside you, becoming a true extension of your team.
+                The Business, founded by Paolo Payne, Graeme Vaughan & Rob Theobald in 2025 was borne out of a simple premise that traditional business consultancy seeks to inform rather than inform and implement.
+              </p>
+              <p className="text-gray-600 text-lg leading-relaxed mb-6">
+                Having worked together in Executive and Senior Roles for 2 decades in one of the UK's largest Wealth Management Firms an opportunity to step away from the corporate world presented itself. As a result, we decided to combine forces to deliver a complimentary and focused proposition to the businesses that choose to work with us.
               </p>
               <p className="text-gray-600 text-lg leading-relaxed">
-                Our approach is simple: we listen, we understand, and we act. Through our discovery sessions, we get to know your business inside and out. Then we create tailored strategic plans that aren't just documents gathering dust – they're living roadmaps that we help you implement.
+                We are passionate about people, value and growth, and are now focused on providing independent support to both new and established financial advice firms.
               </p>
             </div>
             <div className="relative">
               <img 
-                src={aboutOfficeImage} 
-                alt="PVT Partners Office" 
-                className="rounded-lg shadow-lg w-full h-[400px] object-cover"
+                src="/images/Picture2.jpg" 
+                alt="PVT Partners Founders" 
+                className="rounded-lg shadow-lg w-full h-auto object-cover"
               />
+            </div>
+          </div>
+
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div className="order-2 lg:order-1 relative">
+              <img 
+                src="/images/Cutting_Cake.png" 
+                alt="PVT Partners Celebration" 
+                className="rounded-lg shadow-lg w-full h-auto object-cover"
+              />
+            </div>
+            <div className="order-1 lg:order-2">
+              <h3 className="font-serif text-3xl text-slate-blue mb-6">Core Focus Areas</h3>
+              <p className="text-gray-600 text-lg leading-relaxed mb-6">
+                Whilst not an exhaustive list, our core focus areas are:
+              </p>
+              <ul className="space-y-4">
+                <li className="flex items-start">
+                  <div className="w-2 h-2 bg-gold rounded-full mt-2.5 mr-3 flex-shrink-0"></div>
+                  <span className="text-gray-600 text-lg">Business Planning & Implementation of Core Strategies</span>
+                </li>
+                <li className="flex items-start">
+                  <div className="w-2 h-2 bg-gold rounded-full mt-2.5 mr-3 flex-shrink-0"></div>
+                  <span className="text-gray-600 text-lg">People & Team Development</span>
+                </li>
+                <li className="flex items-start">
+                  <div className="w-2 h-2 bg-gold rounded-full mt-2.5 mr-3 flex-shrink-0"></div>
+                  <span className="text-gray-600 text-lg">Longer Term Succession Planning & Exit Planning</span>
+                </li>
+                <li className="flex items-start">
+                  <div className="w-2 h-2 bg-gold rounded-full mt-2.5 mr-3 flex-shrink-0"></div>
+                  <span className="text-gray-600 text-lg">Leadership Coaching & Mentoring</span>
+                </li>
+              </ul>
+              <div className="mt-8">
+                <p className="text-gray-600 text-lg mb-4">
+                  If you would like to find out more you can contact us here.
+                </p>
+                <a href="/contact.html">
+                  <Button className="bg-slate-blue hover:bg-slate-blue/90 text-white font-semibold px-8 py-4">
+                    Contact Us
+                  </Button>
+                </a>
+              </div>
             </div>
           </div>
         </div>

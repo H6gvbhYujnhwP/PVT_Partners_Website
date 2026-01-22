@@ -59,13 +59,13 @@ export default function Home() {
         <div className="container relative z-10 py-20">
           <div className="max-w-2xl">
             <h1 className="font-serif text-5xl md:text-6xl lg:text-7xl text-white mb-4">
-              PVT PARTNERS LTD.
+              Payne, Vaughan & Theobald Partners
             </h1>
             <p className="font-serif text-gold text-2xl md:text-3xl italic mb-6">
-              Strategy Into Action
+              Specialist Business Advisers to the Financial Planning and Wealth Management Sector
             </p>
             <p className="text-white/90 text-lg mb-8 max-w-xl">
-              Empowering advisors and businesses through expert strategic planning and development. We transform vision into measurable results.
+              Consultancy & Implementation Services, exclusively for the Financial Planning & Wealth Management sector.
             </p>
             <div className="flex flex-wrap gap-4">
               <a href="/contact.html">
@@ -79,6 +79,28 @@ export default function Home() {
                 </Button>
               </a>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Who Works With Us Section */}
+      <section className="py-16 bg-white border-b border-gray-100">
+        <div className="container">
+          <div className="text-center mb-10">
+            <h2 className="font-serif text-3xl text-slate-blue mb-4">Who Works With Us</h2>
+            <p className="text-gray-600 max-w-2xl mx-auto">
+              We are proud to work with some of the leading firms in the sector.
+            </p>
+          </div>
+          <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12 opacity-70 grayscale hover:grayscale-0 transition-all duration-500">
+            {/* Placeholders for client logos - using text for now as logos need to be sourced */}
+            <div className="text-xl font-serif text-slate-blue font-semibold">Brightside Wealth Management</div>
+            <div className="text-xl font-serif text-slate-blue font-semibold">Cranwell Wealth Solutions</div>
+            <div className="text-xl font-serif text-slate-blue font-semibold">Paul Butler Wealth Management</div>
+            <div className="text-xl font-serif text-slate-blue font-semibold">Deben Private Wealth</div>
+            <div className="text-xl font-serif text-slate-blue font-semibold">Whitehouse Financial Management</div>
+            <div className="text-xl font-serif text-slate-blue font-semibold">Richard Tidy Wealth Management</div>
+            <div className="text-xl font-serif text-slate-blue font-semibold">Abbeygate Wealth Management</div>
           </div>
         </div>
       </section>
