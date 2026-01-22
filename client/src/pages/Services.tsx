@@ -27,6 +27,9 @@ export default function Services() {
       {/* Why Choose Us */}
       <section className="py-16 bg-white">
         <div className="container">
+          <div className="text-center mb-12">
+            <h2 className="font-serif text-4xl text-slate-blue mb-4">Why Choose Us?</h2>
+          </div>
           <div className="grid md:grid-cols-3 gap-8">
             <div className="p-6 bg-gray-50 rounded-lg">
               <h3 className="font-serif text-xl text-slate-blue mb-3">Expert Guidance</h3>
