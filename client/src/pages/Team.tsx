@@ -19,18 +19,7 @@ const directors = [
     ),
     image: "/images/PaoloPayne.jpg"
   },
-  {
-    name: "Graeme Vaughan",
-    title: "Director",
-    bio: (
-      <>
-        <p className="mb-4">With over 35 years in Financial Services, my career has included 29 years in a range of bancassurance roles leading to 8 years in both development and leadership roles at St James's Place Wealth Management.</p>
-        <p className="mb-4">During my time, I've really loved the coaching and leadership side of my roles, and truly believe that providing individuals with the environment, knowledge and skills to fulfil their potential is absolutely critical. I am delighted to have recently joined forces with 2 longstanding friends and colleagues to launch PVT Partners, where will be doing precisely that.</p>
-        <p>Away from the work I am an 'Essex Boy' born and bred, happily married with 2 grown up daughters and love spending time socialising and having fun with family and friends. I am also a lifelong West Ham sufferer (and season ticket holder) and enjoy watching all kinds of sports. My own sporting ability (and agility!) has waned over the years, but I still try to keep reasonably fit and swing the odd golf club as much as I can.</p>
-      </>
-    ),
-    image: "/images/GraemeVaughan.jpg"
-  },
+
   {
     name: "Rob Theobald",
     title: "Director",

@@ -51,14 +51,7 @@ export default function About() {
             </div>
           </div>
 
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div className="order-2 lg:order-1 relative">
-              <img 
-                src="/images/Cutting_Cake.png" 
-                alt="PVT Partners Celebration" 
-                className="rounded-lg shadow-lg w-full h-auto object-cover"
-              />
-            </div>
+          <div className="grid lg:grid-cols-1 gap-12 items-center">
             <div className="order-1 lg:order-2">
               <h3 className="font-serif text-3xl text-slate-blue mb-6">Core Focus Areas</h3>
               <p className="text-gray-600 text-lg leading-relaxed mb-6">
