@@ -10,7 +10,8 @@ import Services from "./pages/Services";
 import Team from "./pages/Team";
 import Contact from "./pages/Contact";
 
-import CaseStudies from "./pages/CaseStudies";
+import CaseStudies from "@/pages/CaseStudies";
+import Tribute from "@/pages/Tribute";
 import AdvisorDevelopment from "./pages/AdvisorDevelopment";
 import StrategicPlanning from "./pages/StrategicPlanning";
 import BusinessConsulting from "./pages/BusinessConsulting";
@@ -25,7 +26,8 @@ function Router() {
       <Route path={"/team"} component={Team} />
       <Route path={"/contact"} component={Contact} />
 
-      <Route path={"/case-studies"} component={CaseStudies} />
+   <Route path="/case-studies.html" component={CaseStudies} />
+      <Route path="/tribute.html" component={Tribute} />
       <Route path={"/services/advisor-development"} component={AdvisorDevelopment} />
       <Route path={"/services/strategic-planning"} component={StrategicPlanning} />
       <Route path={"/services/business-consulting"} component={BusinessConsulting} />

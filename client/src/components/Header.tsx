@@ -16,6 +16,7 @@ export default function Header() {
     { href: "/team.html", label: "Meet the Team" },
     { href: "/contact.html", label: "Contact" },
     { href: "/case-studies.html", label: "Case Studies" },
+    { href: "/tribute.html", label: "Tribute" },
 
   ];
 
