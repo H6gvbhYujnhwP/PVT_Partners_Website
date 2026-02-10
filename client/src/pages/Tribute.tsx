@@ -25,7 +25,7 @@ export default function Tribute() {
               <div className="w-full md:w-1/3 flex-shrink-0">
                 <div className="relative aspect-[3/4] w-full max-w-sm mx-auto overflow-hidden rounded-lg shadow-xl">
                   <img 
-                    src="/images/Graeme.png" 
+                    src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663048135071/ZevqrIPkYihgVhWm.png" 
                     alt="Graeme Vaughan"
                     className="w-full h-full object-cover"
                   />
