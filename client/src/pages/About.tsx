@@ -27,16 +27,19 @@ export default function About() {
             <div>
               <h2 className="font-serif text-4xl text-slate-blue mb-6">Our Story</h2>
               <p className="text-gray-600 text-lg leading-relaxed mb-6">
-                Payne, Vaughan & Theobald Partners is a Consultancy and Development business, exclusively for the Financial Planning & Wealth Management sector, boasting nearly 100 years of collective knowledge, skills and experience.
+                PVT Partners is a Consultancy and Development business, exclusively supporting the Financial Planning and Wealth Management sector. Together, we bring nearly 100 years of collective knowledge, skills, and experience to the firms we work with.
               </p>
               <p className="text-gray-600 text-lg leading-relaxed mb-6">
-                The Business, founded by Paolo Payne, Graeme Vaughan & Rob Theobald in 2025 was borne out of a simple premise that traditional business consultancy seeks to inform rather than inform and implement.
+                The business was founded in 2025 by Paolo Payne, Graeme Vaughan, and Rob Theobald, built on a simple belief: that traditional consultancy often stops at advice, when real progress comes from both insight and implementation.
               </p>
               <p className="text-gray-600 text-lg leading-relaxed mb-6">
-                Having worked together in Executive and Senior Roles for 2 decades in one of the UK's largest Wealth Management Firms an opportunity to step away from the corporate world presented itself. As a result, we decided to combine forces to deliver a complimentary and focused proposition to the businesses that choose to work with us.
+                Having worked together in Executive and Senior roles for two decades within one of the UK’s largest Wealth Management firms, an opportunity arose to step away from the corporate world and create something more personal, more practical, and more aligned with our shared values. That vision became PVT Partners — a collaborative, focused proposition for forward‑thinking financial planning businesses.
+              </p>
+              <p className="text-gray-600 text-lg leading-relaxed mb-6">
+                Graeme played an important role in shaping our early journey. His warmth, integrity, and commitment to doing the right thing remain part of the foundations of PVT. Graeme sadly passed away in 2026, and he is deeply missed by all who knew him.
               </p>
               <p className="text-gray-600 text-lg leading-relaxed">
-                We are passionate about people, value and growth, and are now focused on providing independent support to both new and established financial advice firms.
+                Today, we continue the work we began together. We are passionate about people, value, and growth, and we remain dedicated to providing independent, hands‑on support to both new and established financial advice firms.
               </p>
             </div>
             <div className="relative">
