@@ -92,10 +92,10 @@ export default function Team() {
             <div>
               <h2 className="font-serif text-4xl text-white mb-6">Working Together</h2>
               <p className="text-white/90 text-lg leading-relaxed mb-6">
-                As a team, we bring complementary skills and perspectives to every engagement. Our collaborative approach means you benefit from the combined expertise of all three directors, ensuring comprehensive support for your business.
+                As a team, we bring complementary skills and perspectives to every engagement. Our collaborative approach means you benefit from the combined expertise of both directors, ensuring well‑rounded, practical, and consistent support for your business.
               </p>
               <p className="text-white/90 text-lg leading-relaxed">
-                We believe in building genuine relationships with our clients. When you work with PVT Partners, you're not just getting consultants – you're gaining trusted advisors who are invested in your success.
+                We believe in building genuine relationships with the firms we work with. When you partner with PVT, you’re not just working with consultants — you’re gaining trusted advisors who are fully invested in your success and committed to helping you achieve meaningful, sustainable growth.
               </p>
             </div>
           </div>

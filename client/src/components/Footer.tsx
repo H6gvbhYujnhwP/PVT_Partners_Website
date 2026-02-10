@@ -31,6 +31,11 @@ export default function Footer() {
 
           </nav>
           
+          {/* Tribute */}
+          <p className="text-white/60 text-sm mb-4 max-w-2xl mx-auto">
+            We honour the memory of our colleague and friend, Graeme Vaughan, whose contribution remains part of the foundation of PVT Partners.
+          </p>
+
           {/* Copyright */}
           <p className="text-white/60 text-sm">
             © 2026 PVT Partners Ltd. All rights reserved.
