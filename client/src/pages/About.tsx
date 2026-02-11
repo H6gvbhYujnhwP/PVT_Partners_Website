@@ -2,7 +2,7 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
-import aboutOfficeImage from "@/assets/images/about-office.jpg";
+const aboutOfficeImage = "https://files.manuscdn.com/user_upload_by_module/session_file/310519663048135071/yvMDtCszEAUDpsrf.jpg";
 import { Handshake, Heart, Zap, Award } from "lucide-react";
 
 export default function About() {

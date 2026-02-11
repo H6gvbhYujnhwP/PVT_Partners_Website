@@ -2,9 +2,9 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
-import consultingImage from "@/assets/images/consulting.jpg";
-import heroTeamImage from "@/assets/images/hero-team.jpg";
-import aboutOfficeImage from "@/assets/images/about-office.jpg";
+const consultingImage = "https://files.manuscdn.com/user_upload_by_module/session_file/310519663048135071/maawORYzqgmSoAsk.jpg";
+const heroTeamImage = "https://files.manuscdn.com/user_upload_by_module/session_file/310519663048135071/POTKJVXgLwVfvLix.jpg";
+const aboutOfficeImage = "https://files.manuscdn.com/user_upload_by_module/session_file/310519663048135071/yvMDtCszEAUDpsrf.jpg";
 import { Briefcase, CheckCircle, Settings, TrendingUp, Users, Zap, Shield, ArrowRight } from "lucide-react";
 
 const consultingAreas = [

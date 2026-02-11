@@ -2,9 +2,9 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { CheckCircle, ArrowRight, Search, Layout, Settings, Users, Target, Briefcase } from "lucide-react";
-import mentorshipImage from "@/assets/images/mentorship.jpg";
-import strategicPlanningImage from "@/assets/images/strategic-planning.jpg";
-import consultingImage from "@/assets/images/consulting.jpg";
+const mentorshipImage = "https://files.manuscdn.com/user_upload_by_module/session_file/310519663048135071/ewODBIiataNtUvhY.jpg";
+const strategicPlanningImage = "https://files.manuscdn.com/user_upload_by_module/session_file/310519663048135071/bWLNXsyxBeLippDD.jpg";
+const consultingImage = "https://files.manuscdn.com/user_upload_by_module/session_file/310519663048135071/maawORYzqgmSoAsk.jpg";
 
 export default function Services() {
   return (

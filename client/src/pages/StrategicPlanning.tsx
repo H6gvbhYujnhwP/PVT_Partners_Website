@@ -2,8 +2,8 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
-import strategicPlanningImage from "@/assets/images/strategic-planning.jpg";
-import aboutOfficeImage from "@/assets/images/about-office.jpg";
+const strategicPlanningImage = "https://files.manuscdn.com/user_upload_by_module/session_file/310519663048135071/bWLNXsyxBeLippDD.jpg";
+const aboutOfficeImage = "https://files.manuscdn.com/user_upload_by_module/session_file/310519663048135071/yvMDtCszEAUDpsrf.jpg";
 import { Target, CheckCircle, Compass, Map, BarChart3, Lightbulb, Clock, ArrowRight } from "lucide-react";
 
 const outcomes = [

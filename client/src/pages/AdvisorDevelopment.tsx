@@ -2,7 +2,7 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
-import mentorshipImage from "@/assets/images/mentorship.jpg";
+const mentorshipImage = "https://files.manuscdn.com/user_upload_by_module/session_file/310519663048135071/ewODBIiataNtUvhY.jpg";
 import { Users, CheckCircle, Target, Award, TrendingUp, BookOpen, MessageSquare, ArrowRight } from "lucide-react";
 
 const benefits = [

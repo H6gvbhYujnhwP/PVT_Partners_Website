@@ -2,7 +2,7 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
-import heroTeamImage from "@/assets/images/hero-team.jpg";
+const heroTeamImage = "https://files.manuscdn.com/user_upload_by_module/session_file/310519663048135071/POTKJVXgLwVfvLix.jpg";
 
 const directors = [
   {
