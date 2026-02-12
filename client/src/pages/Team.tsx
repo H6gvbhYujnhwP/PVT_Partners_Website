@@ -31,7 +31,7 @@ const directors = [
         <p>When I'm not working, you'll usually find me cheering on Billericay Town FC most weekends—because someone must keep the ref honest! If I'm not at the pitch, I'm probably losing golf balls faster than I can swing a club. At home, I'm happily married and kept on my toes by two young daughters who make life wonderfully chaotic (and remind me daily who's really in charge).</p>
       </>
     ),
-    image: "/images/RobTheobald.jpg"
+    image: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663048135071/ixzinMrADXPmiLLb.png"
   }
 ];
 
