@@ -44,8 +44,8 @@ export default function About() {
             </div>
             <div className="relative">
               <img 
-                src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663048135071/rYtvkwyOOhDepHSX.webp" 
-                alt="PVT Partners Founders" 
+                src="https://d2xsxph8kpxj0f.cloudfront.net/310519663048135071/ALZKaMX8FhGZweLFFkyP2M/about_option_1-d2vNTtwxnVhHmTu8hWiTNi.webp" 
+                alt="PVT Partners Team Collaboration" 
                 className="rounded-lg shadow-lg w-full h-auto object-cover"
               />
             </div>

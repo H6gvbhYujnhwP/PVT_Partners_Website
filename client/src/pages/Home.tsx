@@ -200,8 +200,8 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Testimonials Cycling Banner */}
-      <section className="py-12 bg-gray-100 overflow-hidden">
+      {/* Testimonials Cycling Banner - Hidden for now */}
+      {false && <section className="py-12 bg-gray-100 overflow-hidden">
         <div className="container">
           <div className="text-center mb-8">
             <h3 className="font-serif text-2xl text-slate-blue">What Our Clients Say</h3>
@@ -245,7 +245,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </section>
+      </section>}
 
       <Footer />
     </div>
